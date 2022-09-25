@@ -1,4 +1,4 @@
-# Caça Tesouro
+<h1>Caça Tesouro</h1>
 
 ## Mapa
 <kbd>
