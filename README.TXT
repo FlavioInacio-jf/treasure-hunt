@@ -1,21 +1,46 @@
-Project: zuul-with-enums-v2
-Authors: Michael Kölling and David J. Barnes
+# Caça Tesouro
 
-This project is part of the material for the book
+## Alunos
 
-   Objects First with Java - A Practical Introduction using BlueJ
-   Sixth edition
-   David J. Barnes and Michael Kölling
-   Pearson Education, 2016
-   
-This project is a simple framework for an adventure game. In this version,
-it has a few rooms and the ability for a player to walk between these rooms.
-That's all.
+* [Amanda Lima](https://github.com/Papandalimadev)
+* [Flávio Inácio](https://github.com/FlavioInacio-jf)
 
-To start this application, create an instance of class "Game" and call its
-"play" method.
+## Mapa
+<kbd>
+  <img src = "" width = "600px">
+</kbd>
 
-This project was written to illustrate the use of enums to support
-language independence of the game logic.
+## Descrição do jogo
 
-Read chapter 8 of the book to get a detailed description of the project.
+O jogo descreve a aventura do jogador enquanto ele explora o Castelo Poxim em busca de uma safira. Ao longo dessa aventura, ele entra em diversas salas, e algumas delas contêm características especiais: Monstros, armadilhas, cura, quiz e o Chefão. O jogador só consegue a Safira após derrotar o Chefão. Algumas observações fundamentais sobre o jogo:
+* Os comandos de movimentação são "ir" + "leste|oeste|norte|sul". O comando de ataque é "atacar".
+* O jogador tem 10 de vida e 1 de dano. Os monstros tem 3 de vida e 1 de dano. O Chefão tem 8 de vida e 2 de dano.
+* O combate jogador X monstro é baseado em turnos: O jogador ataca, podendo acertar ou errar (e se acertar, podendo dar dano crítico ou não) e, em seguida, o monstro daquela sala ataca, podendo acertar ou errar, mas sem chance de crítico.
+* Um jogador só pode sair de uma sala que possui um monstro se o monstro da sala já tiver sido derrotado.
+* Se o monstro de uma dada sala já foi derrotado, ele não vai spawnar mais.
+* Existem duas salas com cura. Quando o jogador entra nela, automaticamente recebe um cura, mas apenas na primeira vez que visitou tal sala.
+* O limite superior da vida do jogador é 10. Nunca ultrapassa esse limite.
+* A sala de armadilha sempre dá dano automático no momento que um jogador entra nela, mesmo se não for a primeira visita à sala.
+* A sala de quiz garante que, se o jogador acertar a pergunta, ele receberá um feitiço de bola de fogo, que causa 3 de dano ao alvo e tem 100% de chance de acerto.
+
+## To-do (risque as feitas)
+
+* Geral (Pegue algum e coloque no seu campo)
+  * Implementar o comportamento de outras salas com atributos: Quiz, Cura, Armadilha.
+
+* João
+  * Finalizar a adaptação da classe `Game`
+  * ~~Botar o mapa nesse README~~
+  * ~~Implementar funcionalidade para o jogador só poder sair duma sala desde que não esteja mais em combate (Ou seja, derrotou o monstro daquela sala)~~
+
+* Pedro
+  * ~~Escrever testes~~
+  * ~~Criar classe Monster~~
+  * ~~Criar classe Player~~
+  * ~~Traduzir e adaptar textos do jogo~~
+  * ~~Criar case para o comando ATTACK~~
+  * ~~Implementar os atributos/caracteristicas especiais da sala como um ENUM~~
+  * ~~Mover o comportamento da classe Game pra a classe Player~~
+
+## Referências
+* Objects First with Java: A Practical Introduction using BlueJ
