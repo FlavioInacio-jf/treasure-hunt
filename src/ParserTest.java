@@ -1,8 +1,15 @@
 import org.junit.Test;
 
 public class ParserTest {
+  public ParserTest() {
+  }
+
   @Test
-  public void ParserTest() {
+  public void testGetCommand() {
+  }
+
+  @Test
+  public void testShowCommands() {
 
   }
 }
