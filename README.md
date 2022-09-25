@@ -2,7 +2,7 @@
 
 ## Mapa
 <kbd>
-  <img src = "https://github.com/FlavioInacio-jf/treasure-hunt/issues/1#issue-1385139355" width = "600px">
+  <img src = "https://user-images.githubusercontent.com/114360385/192161888-b9381165-0128-4d8a-aa65-51e80df8649f.png" width = "600px">
 </kbd>
 
 ## Descrição do jogo
