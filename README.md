@@ -14,4 +14,4 @@ O Jogo se inicio no meio do oceano indico e o jogador esta a procura de um tesou
 ## Alunos
 
 * [Amanda Lima](https://github.com/Papandalimadev)
-* [Flávio Inácio](https://github.com/FlavioInacio-jf)
+* [Flavio Inácio](https://github.com/FlavioInacio-jf)
